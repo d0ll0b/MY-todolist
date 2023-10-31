@@ -60,21 +60,21 @@
 
 section {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     margin-top:10px;
-    border-radius:8px;
     width: 60vw;
       /* border:1.8px solid #dcdcdc; */
-    background-color: #ffff99;
+    // background-color: #ffff99;
 }
 
 .todo{
-    width: 30vw;
+    // width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,14 +83,16 @@ section {
 }
 
 .todo-text{
-    width: 50%;
-    padding-right: 10px;
+    width: 30%;
+    margin-right: 10px;
+    border-radius:8px;
+    background-color: #ffff99;
 }
 
-.complete{
-    display: none;
-}
+// .complete{
+//     display: none;
+// }
 
-.trash{
-    display: none;
-}
+// .trash{
+//     display: none;
+// }
