@@ -1,2 +1,2 @@
 # MY-todolist
-to-do-list poject (html、css、javascript)
+to-do-list poject (node.js express、nodemon)
