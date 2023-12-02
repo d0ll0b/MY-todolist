@@ -74,17 +74,20 @@ section {
 }
 
 .todo{
-    // width: 30%;
+    width: 30%;
+    padding-bottom: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.2rem 0rem;
+    // margin: 0.2rem 0rem;
+    margin: 0;
     font-size: 1.75rem;
 }
 
 .todo-text{
     width: 30%;
-    margin-right: 10px;
+    padding-bottom: 30%;
+    // margin-right: 10px;
     border-radius:8px;
     background-color: #ffff99;
 }
@@ -96,3 +99,19 @@ section {
 // .trash{
 //     display: none;
 // }
+
+.square {
+    // margin: 0 auto;
+    display: none;
+    width: 30%; /* 设置宽度为50% */
+    padding-bottom: 30%; /* 设置上内边距为50%（等于宽度） */
+    background-color: #3498db; /* 设置背景颜色，可根据需要修改 */
+
+    // .context{
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     top: 0; // 水平垂直置中內容
+    // }
+  }

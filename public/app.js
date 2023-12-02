@@ -45,22 +45,23 @@ function handleClick(e) {
     let todo = document.createElement("div");
     todo.classList.add("todo");
     let text = document.createElement("p");
-    todo.classList.add("todo-text");
+    text.classList.add("todo-text");
     text.innerText = todoText
-    todo.appendChild(text);
     document.querySelector(".input_text").value = '';
     
     // check
     let completeButton = document.createElement("button");
     completeButton.classList.add("complete");
     completeButton.innerHTML = '<i class="fas fa-check"></i>';
-    todo.appendChild(completeButton);
+    text.appendChild(completeButton);
     
     // remove
     let trashButton = document.createElement("button");
     trashButton.classList.add("trash");
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
-    todo.appendChild(trashButton);
+    text.appendChild(trashButton);
+
+    todo.appendChild(text);
 
     section.appendChild(todo);
   }
