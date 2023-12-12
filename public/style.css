@@ -71,20 +71,32 @@ section {
 }
 
 .todo {
-  width: 30%;
-  padding-bottom: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+  position: relative;
+  width: 20%;
+  padding-bottom: 20%;
+  margin: 1rem 1rem;
   font-size: 1.75rem;
+  background-color: #ffff99;
+  border-radius: 8px;
 }
 
 .todo-text {
-  width: 30%;
-  padding-bottom: 30%;
-  border-radius: 8px;
-  background-color: #ffff99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.complete {
+  display: none;
+}
+
+.trash {
+  display: none;
 }
 
 .square {
