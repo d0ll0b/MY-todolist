@@ -8,7 +8,9 @@ function handleClick(e) {
   
   let form = e.target.parentElement;
   let todoText = form.children[0].value;
-  if(todoText!='' && typeof todoText === 'string'){
+  if(todoText !== '' && typeof todoText === 'string'){
+    savetodo(todoText)
+
     //create a todo 
     let todo = document.createElement("div");
     todo.classList.add("todo");
@@ -30,7 +32,6 @@ function handleClick(e) {
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     todo.appendChild(trashButton);
 
-
     section.appendChild(todo);
   }
 }
@@ -40,4 +41,29 @@ function handleKeyUp(e) {
     // enter键被按下
     handleClick(e);
   }
+}
+
+function savetodo(todoText) {
+  const todo = {
+    Text: todoText,
+    index: 1,
+    Datetime: getDateTime()
+  };
+
+  // alert(todo.Text + todo.Datetime)
+}
+
+// 取得當下時間
+function getDateTime() {
+  const DateTime = new Date();
+  const year = DateTime.getFullYear();
+  const month = DateTime.getMonth() + 1;
+  const day = DateTime.getDate();
+  const hours = DateTime.getHours();
+  const minutes = DateTime.getMinutes();
+  const seconds = DateTime.getSeconds();
+
+  const rtnDateTime = `${year}-${month}-${day} ${hours}:${minutes}`;
+  
+  return rtnDateTime;
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .header {
   background: #6B8E23;
   border-radius: 8px;
@@ -79,6 +78,14 @@ section {
   background-color: #ffff99;
   border-radius: 8px;
 }
+.todo button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
 
 .todo-text {
   position: absolute;
@@ -97,11 +104,4 @@ section {
 
 .trash {
   display: none;
-}
-
-.square {
-  display: none;
-  width: 30%; /* 设置宽度为50% */
-  padding-bottom: 30%; /* 设置上内边距为50%（等于宽度） */
-  background-color: #3498db; /* 设置背景颜色，可根据需要修改 */
 }/*# sourceMappingURL=style.css.map */
